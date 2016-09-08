@@ -112,6 +112,50 @@ a {
   }
 }
 
+.search {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  background-color: #252624;
+
+  & > * {
+    height: 38px;
+    line-height: 38px;
+  }
+}
+
+.search-input {
+  flex: 1;
+  background-color: #252624;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+
+  &:focus {
+    border: 0;
+    outline: 0;
+  }
+
+  &::-webkit-input-placeholder {
+    color: #eedb59;
+  }
+}
+
+.btn-search {
+  background-color: #191a19;
+  padding: 0 35px;
+  color: #eedb59;
+
+  &:hover {
+    background-color: #111;
+    text-decoration: none;
+  }
+}
+
 .filter {
   display: flex;
   justify-content: flex-start;

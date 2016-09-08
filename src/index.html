@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="img/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -79,7 +79,7 @@ function filterBy() {
 
 $(document).ready(function() {
     // get the data and compile into the html template
-    $.getJSON('http://jsbooks.revolunet.com/issues.json?0.47854219995464087?' + Math.random(), function(data) {
+    $.getJSON('./jsbooks.json?' + Math.random(), function(data) {
         var template = $('#booktpl').html(),
             issuesWrap = $('#issueswrap');
 
@@ -103,7 +103,7 @@ $(document).ready(function() {
 <script id="booktpl" type="text/template">
   {{#books}}
    <div class="booksection {{level}}">
-    <a  target="_blank" href="{{url}}">
+    <a target="_blank" href="{{url}}">
      <div class="view"> READ </div>
      <div id="cover" style="background:black url('{{cover}}') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;">
      </div>
